@@ -16,7 +16,7 @@ class _ProductGridState extends State<ProductGrid> {
   PageController pageController = PageController(viewportFraction: 0.8);
   var _currentPageValue = 0.0;
   double _scaleFactor = 0.8;
-  double _height = 120;
+  double _height = Dimensions.height120;
 
   @override
   void initState() {
@@ -42,7 +42,7 @@ class _ProductGridState extends State<ProductGrid> {
     return Column(
       children: [
         Container(
-          height: 220,
+          height: Dimensions.productGridHeight,
           width: double.infinity,
           decoration: BoxDecoration(
               //color: Colors.red,
@@ -66,8 +66,8 @@ class _ProductGridState extends State<ProductGrid> {
           position: _currentPageValue,
           decorator: DotsDecorator(
             activeColor: Colors.black,
-            size: const Size.square(9.0),
-            activeSize: const Size(18.0, 9.0),
+            size: Size.square(Dimensions.width10),
+            activeSize: Size(Dimensions.width20, Dimensions.width10),
             activeShape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(5.0)),
           ),

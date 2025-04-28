@@ -12,7 +12,7 @@ class InfoPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 39, 38, 38),
       body: Padding(
-        padding: const EdgeInsets.all(25.0),
+        padding: EdgeInsets.all(Dimensions.width20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -34,7 +34,7 @@ class InfoPage extends StatelessWidget {
 
             //Gym Icon
             Padding(
-              padding: EdgeInsets.all(50),
+              padding: EdgeInsets.all(Dimensions.width20 * 3),
               child: Image.asset(
                 "assets/image/gym.png",
                 //width: Dimensions.width45 * 4,

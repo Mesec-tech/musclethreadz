@@ -72,7 +72,8 @@ class HomePage extends StatelessWidget {
                   color: Colors.grey[600],
                   borderRadius: BorderRadius.circular(Dimensions.radius30),
                 ),
-                margin: EdgeInsets.symmetric(horizontal: Dimensions.height20),
+                margin:
+                    EdgeInsets.symmetric(horizontal: Dimensions.height20 * 1.5),
                 padding: EdgeInsets.all(Dimensions.height20),
                 child: Row(
                   children: [
@@ -92,7 +93,7 @@ class HomePage extends StatelessWidget {
                           backgroundColor:
                               const Color.fromARGB(255, 66, 66, 66),
                           icon: Icons.arrow_forward,
-                          IconSize: Dimensions.iconSize16 * 1.15,
+                          IconSize: Dimensions.iconSize16 * 1.2,
                           IconColor: Colors.white,
                           onTap: () {},
                         ),
@@ -101,13 +102,13 @@ class HomePage extends StatelessWidget {
 
                     //Abstand zwischen Text und Icon
                     SizedBox(
-                      width: Dimensions.width30,
+                      width: Dimensions.width20,
                     ),
 
                     //clothing image
                     Image.asset(
                       "assets/image/sport.png",
-                      width: Dimensions.width45 * 2.25,
+                      width: Dimensions.width45 * 2.3,
                     ),
                   ],
                 ),
@@ -122,10 +123,13 @@ class HomePage extends StatelessWidget {
               Container(
                 padding: EdgeInsets.only(
                     top: Dimensions.height10 / 2,
-                    right: Dimensions.height20,
-                    left: Dimensions.height20),
-                child: SearchBar(
-                  hintText: "Search for products...",
+                    right: Dimensions.height30,
+                    left: Dimensions.height30),
+                child: SizedBox(
+                  height: Dimensions.height10 * 6.2,
+                  child: SearchBar(
+                    hintText: "Search for products...",
+                  ),
                 ),
               ),
 
@@ -141,7 +145,7 @@ class HomePage extends StatelessWidget {
                 child: BigText(
                   text: "Popular Products:",
                   color: Colors.grey[750],
-                  size: Dimensions.font12 * 1.5,
+                  size: Dimensions.font12 * 1.6,
                   isBold: true,
                 ),
               ),

@@ -19,18 +19,18 @@ class _ProductCardState extends State<ProductCard> {
           left: Dimensions.width20,
           right: Dimensions.width20,
           bottom: Dimensions.height20),
-      width: 300,
-      height: 150,
+      width: Dimensions.width300,
+      height: Dimensions.height150,
       decoration: BoxDecoration(
         color: Colors.grey[100],
-        borderRadius: BorderRadius.circular(40),
+        borderRadius: BorderRadius.circular(Dimensions.radius20 * 1.5),
       ),
       child: Row(
         children: [
           // Product Image
           Container(
-            width: 100,
-            height: 100,
+            width: Dimensions.size100,
+            height: Dimensions.size100,
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage("assets/image/tshirt.png"),
@@ -64,7 +64,8 @@ class _ProductCardState extends State<ProductCard> {
 
           // Heart Icon
           Container(
-            margin: EdgeInsets.only(right: 10), // Abstand zum rechten Rand
+            margin: EdgeInsets.only(
+                right: Dimensions.width10), // Abstand zum rechten Rand
             child: IconButton(
               icon: Icon(
                 isFavorite
